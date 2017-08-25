@@ -1,0 +1,20 @@
+<div class="container heading1">
+	<div class="row">
+	<%= form_tag '/excel_file_generators', multipart: true do %>
+  <label for="file">File to Upload</label> 
+  <%= file_field_tag "uploaded_file" %></br>
+  <%= submit_tag 'Upload',class: 'btn' %>
+<% end %>
+
+<% if File.exist?('public/xml_data.xlsx') %>
+	<%=link_to 'Download Sheet',"/xml_data.xlsx" %>
+<% end %>
+	</div>
+	
+</div>
+
+
+
+
+</br>
+

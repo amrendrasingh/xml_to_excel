@@ -1,0 +1,2036 @@
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-25 17:00:56 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/railties-4.2.9/lib/rails/templates/rails/welcome/index.html.erb (2.5ms)
+Completed 200 OK in 68ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 17:01:03 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1312ms (Views: 1311.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/excel_file_generators.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-08-25 17:01:04 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2017-08-25 17:01:04 +0530
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-08-25 17:01:04 +0530
+
+
+Started GET "/assets/excel_file_generators.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-08-25 17:01:04 +0530
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-08-25 17:01:04 +0530
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-08-25 17:01:04 +0530
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2017-08-25 17:01:04 +0530
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 17:01:24 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 23ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/excel_file_generators" for 127.0.0.1 at 2017-08-25 17:01:30 +0530
+Processing by ExcelFileGeneratorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nCmLDhwPUgVYS/H87J6dIvtscX5BWSucH5uAGRh4ZgMWOCPO72eyyxJO6ruFXJgQZ9+lEDGWaTPFWNA7tBy3Bw==", "commit"=>"Upload"}
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template excel_file_generators/create, application/create with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/amrendra.singh/Documents/itech/xml_to_excel/app/views"
+):
+  actionview (4.2.9) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.9) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.9) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.9) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.9) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.9) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.9) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.9) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.9) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.9) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.9) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.9) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.9) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.9) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.9) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.9) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/amrendra.singh/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  activesupport (4.2.9) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.9) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.9) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.9) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.9) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.9) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.9) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.9) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.9) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.9) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.9) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.9) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.9) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.9) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.9) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.9) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.9) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.9) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.9) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.9) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.9) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.9) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.9) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.9) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.9) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.9) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.9) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.9) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.9) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.9) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.8) lib/rack/etag.rb:24:in `call'
+  rack (1.6.8) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.8) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.9) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.9) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.9) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.9) lib/rails/engine.rb:518:in `call'
+  railties (4.2.9) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/amrendra.singh/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/amrendra.singh/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/amrendra.singh/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.1ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (78.3ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.2ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (105.8ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (195.1ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 17:01:57 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 32ms (Views: 31.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 17:12:12 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 667ms (Views: 634.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2017-08-25 17:12:13 +0530
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-08-25 17:12:13 +0530
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-08-25 17:12:13 +0530
+
+
+Started GET "/assets/excel_file_generators.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-08-25 17:12:13 +0530
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-08-25 17:12:13 +0530
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2017-08-25 17:12:13 +0530
+
+
+Started GET "/assets/excel_file_generators.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-08-25 17:12:13 +0530
+
+
+Started POST "/excel_file_generators" for 127.0.0.1 at 2017-08-25 17:12:26 +0530
+Processing by ExcelFileGeneratorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kRl+/JKRFTnFeMM7WVKJTxayamqxCMxaBTtfTKZxRqYbCNY8Yfn194992HwwkIx9igG+BMHHjvXf+A9uChWXog==", "uploaded_file"=>#<ActionDispatch::Http::UploadedFile:0x007f8636ea3eb8 @tempfile=#<Tempfile:/var/folders/vt/dq_x0_hx1yxffbc9mjydvph1g9pxbm/T/RackMultipart20170825-49864-1p81hux.xml>, @original_filename="test.xml", @content_type="text/xml", @headers="Content-Disposition: form-data; name=\"uploaded_file\"; filename=\"test.xml\"\r\nContent-Type: text/xml\r\n">, "commit"=>"Upload"}
+Completed 500 Internal Server Error in 32558ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template excel_file_generators/create, application/create with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/amrendra.singh/Documents/itech/xml_to_excel/app/views"
+):
+  actionview (4.2.9) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.9) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.9) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.9) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.9) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.9) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.9) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.9) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.9) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.9) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.9) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.9) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.9) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.9) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.9) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.9) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/amrendra.singh/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  activesupport (4.2.9) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.9) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.9) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.9) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.9) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.9) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.9) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.9) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.9) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.9) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.9) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.9) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.9) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.9) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.9) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.9) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.9) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.9) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.9) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.9) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.9) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.9) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.9) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.9) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.9) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.9) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.9) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.9) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.9) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.9) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.8) lib/rack/etag.rb:24:in `call'
+  rack (1.6.8) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.8) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.9) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.9) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.9) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.9) lib/rails/engine.rb:518:in `call'
+  railties (4.2.9) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/amrendra.singh/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/amrendra.singh/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/amrendra.singh/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (111.6ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (160.3ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (353.9ms)
+
+
+Started POST "/excel_file_generators" for 127.0.0.1 at 2017-08-25 17:24:45 +0530
+Processing by ExcelFileGeneratorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kRl+/JKRFTnFeMM7WVKJTxayamqxCMxaBTtfTKZxRqYbCNY8Yfn194992HwwkIx9igG+BMHHjvXf+A9uChWXog==", "uploaded_file"=>#<ActionDispatch::Http::UploadedFile:0x007ff85b6bfd90 @tempfile=#<Tempfile:/var/folders/vt/dq_x0_hx1yxffbc9mjydvph1g9pxbm/T/RackMultipart20170825-50038-1ldxmmy.xml>, @original_filename="test.xml", @content_type="text/xml", @headers="Content-Disposition: form-data; name=\"uploaded_file\"; filename=\"test.xml\"\r\nContent-Type: text/xml\r\n">, "commit"=>"Upload"}
+Redirected to http://localhost:3005/excel_file_generators/new
+Completed 302 Found in 5425ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 17:24:52 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 525ms (Views: 524.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 17:32:44 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 482ms (Views: 462.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/excel_file_generators" for 127.0.0.1 at 2017-08-25 17:32:53 +0530
+Processing by ExcelFileGeneratorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z2ZFetSfWIPINrg2lTnhKetZKtrX2kQCmabymbk4zQ/td+26J/e4TYIzo3H8++Qbd+r+tKcVBq1DZaK7FVwcCw==", "uploaded_file"=>#<ActionDispatch::Http::UploadedFile:0x007fede421f168 @tempfile=#<Tempfile:/var/folders/vt/dq_x0_hx1yxffbc9mjydvph1g9pxbm/T/RackMultipart20170825-50278-1plphqk.xml>, @original_filename="test.xml", @content_type="text/xml", @headers="Content-Disposition: form-data; name=\"uploaded_file\"; filename=\"test.xml\"\r\nContent-Type: text/xml\r\n">, "commit"=>"Upload"}
+Completed 500 Internal Server Error in 6586ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `serialize' for #<Axlsx::Workbook:0x007fede8b6f278>):
+  app/controllers/excel_file_generators_controller.rb:30:in `create'
+
+
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.8ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (89.3ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (220.1ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (332.4ms)
+
+
+Started POST "/excel_file_generators" for 127.0.0.1 at 2017-08-25 17:33:24 +0530
+Processing by ExcelFileGeneratorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z2ZFetSfWIPINrg2lTnhKetZKtrX2kQCmabymbk4zQ/td+26J/e4TYIzo3H8++Qbd+r+tKcVBq1DZaK7FVwcCw==", "uploaded_file"=>#<ActionDispatch::Http::UploadedFile:0x007fede898eb48 @tempfile=#<Tempfile:/var/folders/vt/dq_x0_hx1yxffbc9mjydvph1g9pxbm/T/RackMultipart20170825-50278-1sp3cuu.xml>, @original_filename="test.xml", @content_type="text/xml", @headers="Content-Disposition: form-data; name=\"uploaded_file\"; filename=\"test.xml\"\r\nContent-Type: text/xml\r\n">, "commit"=>"Upload"}
+Completed 500 Internal Server Error in 2440ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template excel_file_generators/create, application/create with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/amrendra.singh/Documents/itech/xml_to_excel/app/views"
+):
+  actionview (4.2.9) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.9) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.9) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.9) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.9) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.9) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.9) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.9) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.9) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.9) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.9) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.9) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.9) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.9) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.9) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.9) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/amrendra.singh/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  activesupport (4.2.9) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.9) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.9) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.9) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.9) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.9) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.9) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.9) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.9) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.9) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.9) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.9) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.9) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.9) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.9) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.9) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.9) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.9) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.9) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.9) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.9) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.9) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.9) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.9) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.9) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.9) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.9) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.9) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.9) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.9) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.8) lib/rack/etag.rb:24:in `call'
+  rack (1.6.8) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.8) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.9) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.9) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.9) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.9) lib/rails/engine.rb:518:in `call'
+  railties (4.2.9) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/amrendra.singh/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/amrendra.singh/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/amrendra.singh/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (73.6ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (72.8ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (156.6ms)
+
+
+Started POST "/excel_file_generators" for 127.0.0.1 at 2017-08-25 17:33:51 +0530
+Processing by ExcelFileGeneratorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z2ZFetSfWIPINrg2lTnhKetZKtrX2kQCmabymbk4zQ/td+26J/e4TYIzo3H8++Qbd+r+tKcVBq1DZaK7FVwcCw==", "uploaded_file"=>#<ActionDispatch::Http::UploadedFile:0x007fede9eac228 @tempfile=#<Tempfile:/var/folders/vt/dq_x0_hx1yxffbc9mjydvph1g9pxbm/T/RackMultipart20170825-50278-eqy1d2.xml>, @original_filename="test.xml", @content_type="text/xml", @headers="Content-Disposition: form-data; name=\"uploaded_file\"; filename=\"test.xml\"\r\nContent-Type: text/xml\r\n">, "commit"=>"Upload"}
+Completed 500 Internal Server Error in 8202ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template excel_file_generators/create, application/create with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/amrendra.singh/Documents/itech/xml_to_excel/app/views"
+):
+  actionview (4.2.9) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.9) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.9) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.9) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.9) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.9) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.9) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.9) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.9) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.9) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.9) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.9) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.9) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.9) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.9) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.9) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/amrendra.singh/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  activesupport (4.2.9) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.9) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.9) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.9) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.9) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.9) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.9) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.9) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.9) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.9) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.9) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.9) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.9) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.9) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.9) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.9) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.9) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.9) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.9) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.9) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.9) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.9) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.9) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.9) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.9) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.9) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.9) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.9) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.9) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.9) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.8) lib/rack/etag.rb:24:in `call'
+  rack (1.6.8) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.8) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.9) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.9) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.9) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.9) lib/rails/engine.rb:518:in `call'
+  railties (4.2.9) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/amrendra.singh/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/amrendra.singh/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/amrendra.singh/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (70.1ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (60.8ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (142.7ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 17:38:29 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 221ms (Views: 220.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/excel_file_generators" for 127.0.0.1 at 2017-08-25 17:38:38 +0530
+Processing by ExcelFileGeneratorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BEs/HUCGRKFw/h1d+EHLYVWsy+rDyrYq2fo+yKSQZ+6OWpfds+6kbzr7BhqRg85TyR8fhLMF9IUDOW7qCPS26g==", "uploaded_file"=>#<ActionDispatch::Http::UploadedFile:0x007fede9f16448 @tempfile=#<Tempfile:/var/folders/vt/dq_x0_hx1yxffbc9mjydvph1g9pxbm/T/RackMultipart20170825-50278-cdgnhr.xml>, @original_filename="test.xml", @content_type="text/xml", @headers="Content-Disposition: form-data; name=\"uploaded_file\"; filename=\"test.xml\"\r\nContent-Type: text/xml\r\n">, "commit"=>"Upload"}
+Redirected to http://localhost:3005/excel_file_generators/new
+Completed 302 Found in 120ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 17:38:38 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 17:41:18 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `to_model' for #<Pathname:0x007fede6762830>
+Did you mean?  to_yaml):
+    5: <% end %>
+    6: 
+    7: <% if Rails.root.join('xml_data.xlsx').present? %>
+    8: 	<%=link_to 'Download Sheet',Rails.root.join('xml_data.xlsx') %>
+    9: <% end %>
+  app/views/excel_file_generators/new.html.erb:8:in `_app_views_excel_file_generators_new_html_erb___1664948609602727325_70329875349620'
+
+
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.8ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.9ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (84.8ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (67.9ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (144.2ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 17:41:48 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 119ms (Views: 118.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 17:42:13 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 15ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/excel_file_generators" for 127.0.0.1 at 2017-08-25 17:42:24 +0530
+Processing by ExcelFileGeneratorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DwQY5QWkgqR1pz+YW4TJbRETNXXarpQutjAQ74Cez0+FFbAl9sxiaj+iJN8yRsxfjaDhG6ph1oFs80DNLPoeSw==", "uploaded_file"=>#<ActionDispatch::Http::UploadedFile:0x007fede9b56858 @tempfile=#<Tempfile:/var/folders/vt/dq_x0_hx1yxffbc9mjydvph1g9pxbm/T/RackMultipart20170825-50278-60s063.xml>, @original_filename="test.xml", @content_type="text/xml", @headers="Content-Disposition: form-data; name=\"uploaded_file\"; filename=\"test.xml\"\r\nContent-Type: text/xml\r\n">, "commit"=>"Upload"}
+Redirected to http://localhost:3005/excel_file_generators/new
+Completed 302 Found in 85ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 17:42:24 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Users/amrendra.singh/Documents/itech/xml_to_excel/xml_data.xlsx" for 127.0.0.1 at 2017-08-25 17:42:26 +0530
+
+ActionController::RoutingError (No route matches [GET] "/Users/amrendra.singh/Documents/itech/xml_to_excel/xml_data.xlsx"):
+  actionpack (4.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.9) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.9) lib/rails/engine.rb:518:in `call'
+  railties (4.2.9) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/amrendra.singh/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/amrendra.singh/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/amrendra.singh/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/routes/_table.html.erb (53.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (143.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (58.8ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (131.8ms)
+
+
+Started GET "/Users/amrendra.singh/Documents/itech/xml_to_excel/xml_data.xlsx" for 127.0.0.1 at 2017-08-25 17:42:30 +0530
+
+ActionController::RoutingError (No route matches [GET] "/Users/amrendra.singh/Documents/itech/xml_to_excel/xml_data.xlsx"):
+  actionpack (4.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.9) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.9) lib/rails/engine.rb:518:in `call'
+  railties (4.2.9) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/amrendra.singh/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/amrendra.singh/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/amrendra.singh/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (87.2ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (54.8ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (123.2ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 17:42:40 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 29ms (Views: 28.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 17:44:10 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 130ms (Views: 129.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators//Users/amrendra.singh/Documents/itech/xml_to_excel/xml_data.xlsx" for 127.0.0.1 at 2017-08-25 17:44:14 +0530
+
+ActionController::RoutingError (No route matches [GET] "/excel_file_generators/Users/amrendra.singh/Documents/itech/xml_to_excel/xml_data.xlsx"):
+  actionpack (4.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.9) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.9) lib/rails/engine.rb:518:in `call'
+  railties (4.2.9) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/amrendra.singh/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/amrendra.singh/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/amrendra.singh/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (99.1ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (58.8ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (135.8ms)
+
+
+Started GET "/excel_file_generators/xml_data.xlsx" for 127.0.0.1 at 2017-08-25 17:44:24 +0530
+
+AbstractController::ActionNotFound (The action 'show' could not be found for ExcelFileGeneratorsController):
+  actionpack (4.2.9) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.9) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.9) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.9) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.9) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.9) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.9) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.9) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.9) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.9) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.9) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.8) lib/rack/etag.rb:24:in `call'
+  rack (1.6.8) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.8) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.9) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.9) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.9) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.9) lib/rails/engine.rb:518:in `call'
+  railties (4.2.9) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/amrendra.singh/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/amrendra.singh/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/amrendra.singh/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (60.9ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (127.5ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 17:46:46 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 129ms (Views: 128.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/xml_data.xlsx" for 127.0.0.1 at 2017-08-25 17:46:47 +0530
+
+ActionController::RoutingError (No route matches [GET] "/xml_data.xlsx"):
+  actionpack (4.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.9) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.9) lib/rails/engine.rb:518:in `call'
+  railties (4.2.9) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/amrendra.singh/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/amrendra.singh/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/amrendra.singh/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (88.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (55.0ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (127.8ms)
+
+
+Started GET "/xml_data.xlsx" for 127.0.0.1 at 2017-08-25 17:46:54 +0530
+
+ActionController::RoutingError (No route matches [GET] "/xml_data.xlsx"):
+  actionpack (4.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.9) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.9) lib/rails/engine.rb:518:in `call'
+  railties (4.2.9) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/amrendra.singh/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/amrendra.singh/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/amrendra.singh/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (82.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (59.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (130.4ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 17:47:19 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/excel_file_generators" for 127.0.0.1 at 2017-08-25 17:47:28 +0530
+Processing by ExcelFileGeneratorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KOIeKsplS56QXTVMhX8ZhjmB5Z8XNS9DmJfRrEEAcQii87bqOQ2rUNpYLgvsvRy0pTIx8Wf6bexCVIGO7WSgDA==", "uploaded_file"=>#<ActionDispatch::Http::UploadedFile:0x007fede9f266e0 @tempfile=#<Tempfile:/var/folders/vt/dq_x0_hx1yxffbc9mjydvph1g9pxbm/T/RackMultipart20170825-50278-1ygjk4s.xml>, @original_filename="test.xml", @content_type="text/xml", @headers="Content-Disposition: form-data; name=\"uploaded_file\"; filename=\"test.xml\"\r\nContent-Type: text/xml\r\n">, "commit"=>"Upload"}
+Redirected to http://localhost:3005/excel_file_generators/new
+Completed 302 Found in 84ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 17:47:28 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 17:48:05 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 29ms (Views: 28.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 17:48:18 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/xml_data.xlsx" for 127.0.0.1 at 2017-08-25 17:48:30 +0530
+
+ActionController::RoutingError (No route matches [GET] "/xml_data.xlsx"):
+  actionpack (4.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.9) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.9) lib/rails/engine.rb:518:in `call'
+  railties (4.2.9) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/amrendra.singh/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/amrendra.singh/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/amrendra.singh/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.6ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.9ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (88.2ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (61.6ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (129.6ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 17:49:08 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 17:53:13 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 97ms (Views: 96.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/excel_file_generators" for 127.0.0.1 at 2017-08-25 17:53:21 +0530
+Processing by ExcelFileGeneratorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2TNT9HDudqxR8xAuRK13WFdMGONpzcn3j7v1gqtTgnJTIvs0g4aWYhv2C2ktb3Jqy//MjRkCi1hVeKWgBzdTdg==", "uploaded_file"=>#<ActionDispatch::Http::UploadedFile:0x007fede367c1f8 @tempfile=#<Tempfile:/var/folders/vt/dq_x0_hx1yxffbc9mjydvph1g9pxbm/T/RackMultipart20170825-50278-x63mlf.xml>, @original_filename="test.xml", @content_type="text/xml", @headers="Content-Disposition: form-data; name=\"uploaded_file\"; filename=\"test.xml\"\r\nContent-Type: text/xml\r\n">, "commit"=>"Upload"}
+Redirected to http://localhost:3005/excel_file_generators/new
+Completed 302 Found in 140ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 17:53:21 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 17:53:47 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 32ms (Views: 31.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 20:58:00 +0530
+
+Gem::LoadError (Specified 'sqlite3' for database adapter, but the gem is not loaded. Add `gem 'sqlite3'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  activerecord (4.2.9) lib/active_record/connection_adapters/connection_specification.rb:177:in `rescue in spec'
+  activerecord (4.2.9) lib/active_record/connection_adapters/connection_specification.rb:174:in `spec'
+  activerecord (4.2.9) lib/active_record/connection_handling.rb:50:in `establish_connection'
+  activerecord (4.2.9) lib/active_record/railtie.rb:122:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.2.9) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.2.9) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.2.9) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.2.9) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.2.9) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.2.9) lib/active_record/base.rb:315:in `<module:ActiveRecord>'
+  activerecord (4.2.9) lib/active_record/base.rb:26:in `<top (required)>'
+  activesupport (4.2.9) lib/active_support/dependencies.rb:274:in `require'
+  activesupport (4.2.9) lib/active_support/dependencies.rb:274:in `block in require'
+  activesupport (4.2.9) lib/active_support/dependencies.rb:240:in `load_dependency'
+  activesupport (4.2.9) lib/active_support/dependencies.rb:274:in `require'
+  activerecord (4.2.9) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.9) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.9) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.9) lib/rails/engine.rb:518:in `call'
+  railties (4.2.9) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/amrendra.singh/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/amrendra.singh/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/amrendra.singh/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (106.3ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (194.4ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 20:58:42 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 8309ms (Views: 8289.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-16ca2e2ea802c33ec57ad967e6cbaac6a5b2e9bd9cf3248b6f29f9b3a3087035.css?body=1" for 127.0.0.1 at 2017-08-25 20:58:51 +0530
+
+
+Started GET "/assets/jquery3.self-06c43429d1047ce3f355da574d8a9750209971b8b1b8f264f91f5518c5fcc060.js?body=1" for 127.0.0.1 at 2017-08-25 20:58:51 +0530
+
+
+Started GET "/assets/bootstrap.self-5bc207ab67b61017241551af854cd03c4aeac4b4820c49aad9bc81e55fce4a12.js?body=1" for 127.0.0.1 at 2017-08-25 20:58:51 +0530
+
+
+Started GET "/assets/application.self-10ad0916cf31256fe71785e8dc9cc297a96b1cdf7b74aeb61711199b9a3d003f.js?body=1" for 127.0.0.1 at 2017-08-25 20:58:51 +0530
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:00:20 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 240ms (Views: 239.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:00:34 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 87ms (Views: 85.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for 127.0.0.1 at 2017-08-25 21:00:35 +0530
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:00:57 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 53ms (Views: 52.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:01:59 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 2445ms (Views: 2445.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:02:13 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 89ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (couldn't find file 'bootstrap.min' with type 'text/css'
+Checked in these paths: 
+  /Users/amrendra.singh/Documents/itech/xml_to_excel/app/assets/images
+  /Users/amrendra.singh/Documents/itech/xml_to_excel/app/assets/javascripts
+  /Users/amrendra.singh/Documents/itech/xml_to_excel/app/assets/stylesheets
+  /Users/amrendra.singh/Documents/itech/xml_to_excel/vendor/assets/javascripts
+  /Users/amrendra.singh/Documents/itech/xml_to_excel/vendor/assets/stylesheets
+  /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/coffee-rails-4.1.1/lib/assets/javascripts
+  /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/popper_js-1.11.1/assets/javascripts
+  /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/bootstrap-4.0.0.beta/assets/stylesheets
+  /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/bootstrap-4.0.0.beta/assets/javascripts):
+    2: <html>
+    3: <head>
+    4:   <title>XmlToExcel</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/application.css:14
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___3644309278222597758_70259146583340'
+
+
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.7ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (86.7ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (103.9ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (235.5ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:03:15 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (couldn't find file 'bootstrap.min' with type 'text/css'
+Checked in these paths: 
+  /Users/amrendra.singh/Documents/itech/xml_to_excel/app/assets/images
+  /Users/amrendra.singh/Documents/itech/xml_to_excel/app/assets/javascripts
+  /Users/amrendra.singh/Documents/itech/xml_to_excel/app/assets/stylesheets
+  /Users/amrendra.singh/Documents/itech/xml_to_excel/vendor/assets/javascripts
+  /Users/amrendra.singh/Documents/itech/xml_to_excel/vendor/assets/stylesheets
+  /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/coffee-rails-4.1.1/lib/assets/javascripts
+  /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/popper_js-1.11.1/assets/javascripts
+  /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/bootstrap-4.0.0.beta/assets/stylesheets
+  /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/bootstrap-4.0.0.beta/assets/javascripts):
+    2: <html>
+    3: <head>
+    4:   <title>XmlToExcel</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/application.css:14
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___3644309278222597758_70259146583340'
+
+
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.3ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (81.8ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (2.1ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (66.9ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (152.7ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:03:28 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 99ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (couldn't find file 'bootstrap' with type 'text/css'
+Checked in these paths: 
+  /Users/amrendra.singh/Documents/itech/xml_to_excel/app/assets/images
+  /Users/amrendra.singh/Documents/itech/xml_to_excel/app/assets/javascripts
+  /Users/amrendra.singh/Documents/itech/xml_to_excel/app/assets/stylesheets
+  /Users/amrendra.singh/Documents/itech/xml_to_excel/vendor/assets/javascripts
+  /Users/amrendra.singh/Documents/itech/xml_to_excel/vendor/assets/stylesheets
+  /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/coffee-rails-4.1.1/lib/assets/javascripts
+  /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/popper_js-1.11.1/assets/javascripts
+  /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/bootstrap-4.0.0.beta/assets/stylesheets
+  /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/bootstrap-4.0.0.beta/assets/javascripts):
+    2: <html>
+    3: <head>
+    4:   <title>XmlToExcel</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/application.css:14
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___3644309278222597758_70259146583340'
+
+
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.6ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.8ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (85.9ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (64.0ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (142.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:05:39 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 3176ms (Views: 3168.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-f68818e0f9f2b5fb208068b5177d4ba483dae647dfef65e6bf7d3d9d2964de02.css?body=1" for 127.0.0.1 at 2017-08-25 21:05:43 +0530
+
+
+Started GET "/assets/bootstrap/util.self-3f05772daad94b3a44787d4f29ecf50f7cccb41f31a3a96d823a13416f4ea62a.js?body=1" for 127.0.0.1 at 2017-08-25 21:05:43 +0530
+
+
+Started GET "/assets/bootstrap/alert.self-a3cd07194b89c01731a2679f38c5a36719a4c112af5252e0c74f70e2a6cac4a7.js?body=1" for 127.0.0.1 at 2017-08-25 21:05:43 +0530
+
+
+Started GET "/assets/bootstrap/dropdown.self-62a18f53bb561c452c7cb3b87226c9fdf5608a93d652341cf89287b1d27d6ece.js?body=1" for 127.0.0.1 at 2017-08-25 21:05:43 +0530
+
+
+Started GET "/assets/bootstrap/button.self-278f898ac691a7b9327463585e31c8b807bd1b8ca2591b71057931855095ca8b.js?body=1" for 127.0.0.1 at 2017-08-25 21:05:43 +0530
+
+
+Started GET "/assets/bootstrap/carousel.self-042e04cee87e0e5e1c3c5032f01351a9117045df7ac1775c4e573dfcd9462457.js?body=1" for 127.0.0.1 at 2017-08-25 21:05:43 +0530
+
+
+Started GET "/assets/bootstrap/scrollspy.self-b1120c016c5bf49078e003c629a367ae9ccd6a982c710b7235f8c70fed616e29.js?body=1" for 127.0.0.1 at 2017-08-25 21:05:43 +0530
+
+
+Started GET "/assets/bootstrap/tooltip.self-370e3e03d9a1eca6d4029ce5fc7a384f299910ae6293117fccdf30398b5aeb18.js?body=1" for 127.0.0.1 at 2017-08-25 21:05:43 +0530
+
+
+Started GET "/assets/bootstrap/collapse.self-1e0aa9303fcc5c7372e496e845b7fdc132f5833a826f2467058d625aaa2e0cfe.js?body=1" for 127.0.0.1 at 2017-08-25 21:05:43 +0530
+
+
+Started GET "/assets/bootstrap/modal.self-a880687c6b4403421baa08c8e1cdfebe99265ad82a7a241e6957d830aa21321e.js?body=1" for 127.0.0.1 at 2017-08-25 21:05:43 +0530
+
+
+Started GET "/assets/bootstrap/tab.self-07287af9f548b6cb2acc5f06dc2cdc351547e67e65846699106984ff0b4eb6e6.js?body=1" for 127.0.0.1 at 2017-08-25 21:05:43 +0530
+
+
+Started GET "/assets/bootstrap/popover.self-35ffc8373b11c5bf5aebcb170abc7392bc9cd9ad0f981dab18e230c6995275ca.js?body=1" for 127.0.0.1 at 2017-08-25 21:05:43 +0530
+
+
+Started GET "/assets/bootstrap-sprockets.self-636159b35205da4142a43bc02d2849d77d3ac07a0946211585cde15a9c6ff21f.js?body=1" for 127.0.0.1 at 2017-08-25 21:05:43 +0530
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:05:56 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 198ms (Views: 197.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:07:07 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 179ms (Views: 178.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.self-504d59678f10d79a661b6cecdce5b8c1d5bfd98e860614584c0a40399552d61f.js?body=1" for 127.0.0.1 at 2017-08-25 21:07:07 +0530
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:10:27 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 174ms (Views: 173.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:11:15 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 18ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:12:06 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:13:18 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 110ms (Views: 109.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:13:30 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:14:40 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 144ms (Views: 143.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:15:06 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:15:19 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:15:41 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 24ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:20:24 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1544ms (Views: 1541.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-b3d10271ea874fac943b814d33b997a0872a767654a7dd5048bc6f220e680197.css?body=1" for 127.0.0.1 at 2017-08-25 21:20:26 +0530
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:20:46 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 467ms (Views: 465.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:21:21 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 133ms (Views: 132.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:22:25 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 166ms (Views: 165.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:24:00 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 176ms (Views: 174.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:27:13 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 174ms (Views: 173.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:28:14 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1350ms (Views: 1349.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-1753069dec2694ce2751f885e9781df267a1381d30ffc2f5249a4b020ba2bb67.css?body=1" for 127.0.0.1 at 2017-08-25 21:28:15 +0530
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:28:36 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 692ms (Views: 691.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-94c7a96a332af10a63000bf62a575009bd719916cf1825b73c12579d0f30a11c.css?body=1" for 127.0.0.1 at 2017-08-25 21:28:37 +0530
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:29:34 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/excel_file_generators" for 127.0.0.1 at 2017-08-25 21:29:46 +0530
+Processing by ExcelFileGeneratorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DNx9sytnXh+70HTD7edCRI5iKKeotuoceahGSVTWrbGGzdVz2A++0fHVb4SEJUd2EtH8ydh5qLOjaxZr+LJ8tQ==", "uploaded_file"=>#<ActionDispatch::Http::UploadedFile:0x007fccf5c09288 @tempfile=#<Tempfile:/var/folders/vt/dq_x0_hx1yxffbc9mjydvph1g9pxbm/T/RackMultipart20170825-51652-1rw6swh.xml>, @original_filename="test.xml", @content_type="text/xml", @headers="Content-Disposition: form-data; name=\"uploaded_file\"; filename=\"test.xml\"\r\nContent-Type: text/xml\r\n">, "commit"=>"Upload"}
+Redirected to http://localhost:3005/excel_file_generators/new
+Completed 302 Found in 131ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:29:46 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:30:49 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 24ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:34:56 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 28ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/excel_file_generators" for 127.0.0.1 at 2017-08-25 21:35:05 +0530
+Processing by ExcelFileGeneratorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+Ei1THWGoNd+510RvN+B2bJa2kThNClqgLHZvZL1vTFyWR2Mhu5AGTTiRlbVHYTrLukOKpH7a8VacomfPpFsNQ==", "uploaded_file"=>#<ActionDispatch::Http::UploadedFile:0x007fccf5148b28 @tempfile=#<Tempfile:/var/folders/vt/dq_x0_hx1yxffbc9mjydvph1g9pxbm/T/RackMultipart20170825-51652-qi1d4n.xml>, @original_filename="test.xml", @content_type="text/xml", @headers="Content-Disposition: form-data; name=\"uploaded_file\"; filename=\"test.xml\"\r\nContent-Type: text/xml\r\n">, "commit"=>"Upload"}
+Redirected to http://localhost:3005/excel_file_generators/new
+Completed 302 Found in 123ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:35:05 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:36:04 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 23ms (Views: 22.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/excel_file_generators" for 127.0.0.1 at 2017-08-25 21:36:11 +0530
+Processing by ExcelFileGeneratorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/njVEUcdCh4HQvUfWn5hktvpew6m2pWY/s73RRjLBZJ0aX3RtHXq0E1H7lgzvGSgR1qvYNYV1zckDadntK/Ulg==", "uploaded_file"=>#<ActionDispatch::Http::UploadedFile:0x007fccf5d98ea0 @tempfile=#<Tempfile:/var/folders/vt/dq_x0_hx1yxffbc9mjydvph1g9pxbm/T/RackMultipart20170825-51652-1mrh0ju.xml>, @original_filename="test.xml", @content_type="text/xml", @headers="Content-Disposition: form-data; name=\"uploaded_file\"; filename=\"test.xml\"\r\nContent-Type: text/xml\r\n">, "commit"=>"Upload"}
+Redirected to http://localhost:3005/excel_file_generators/new
+Completed 302 Found in 90ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:36:12 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/excel_file_generators" for 127.0.0.1 at 2017-08-25 21:37:18 +0530
+Processing by ExcelFileGeneratorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XQtkXFyDf4E/EANJ2T/RcIMjNsEhT1U0JWyRZp9e147XGsycr+ufT3UVGA6w/dRCH5Dir1GAF5v/r8FEMzoGig==", "uploaded_file"=>#<ActionDispatch::Http::UploadedFile:0x007fccfcf6d4b8 @tempfile=#<Tempfile:/var/folders/vt/dq_x0_hx1yxffbc9mjydvph1g9pxbm/T/RackMultipart20170825-51652-x9g4xh.xml>, @original_filename="test.xml", @content_type="text/xml", @headers="Content-Disposition: form-data; name=\"uploaded_file\"; filename=\"test.xml\"\r\nContent-Type: text/xml\r\n">, "commit"=>"Upload"}
+Redirected to http://localhost:3005/excel_file_generators/new
+Completed 302 Found in 127ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:37:19 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 29ms (Views: 28.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/excel_file_generators" for 127.0.0.1 at 2017-08-25 21:39:28 +0530
+Processing by ExcelFileGeneratorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"00PtEep4e2+kemQRZ7Y1OyyRNXOPkz0I77LHkUB+UfFZUkXRGRCboe5/f1YOdDAJsCLhHf9cf6c1cZez7BqA9Q==", "uploaded_file"=>#<ActionDispatch::Http::UploadedFile:0x007fccfcf9f8a0 @tempfile=#<Tempfile:/var/folders/vt/dq_x0_hx1yxffbc9mjydvph1g9pxbm/T/RackMultipart20170825-51652-1e7ictt.xml>, @original_filename="test.xml", @content_type="text/xml", @headers="Content-Disposition: form-data; name=\"uploaded_file\"; filename=\"test.xml\"\r\nContent-Type: text/xml\r\n">, "commit"=>"Upload"}
+Redirected to http://localhost:3005/excel_file_generators/new
+Completed 302 Found in 107ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:39:28 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 112ms (Views: 111.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/excel_file_generators" for 127.0.0.1 at 2017-08-25 21:40:12 +0530
+Processing by ExcelFileGeneratorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oReWbdVUymG9ULnDy5oSyZQy+4TagIQV4WzQBfHiAzErBj6tJjwqr/dVooSiWBf7CIEv6qpPxro7r4AnXYbSNQ==", "uploaded_file"=>#<ActionDispatch::Http::UploadedFile:0x007fccf8890ef0 @tempfile=#<Tempfile:/var/folders/vt/dq_x0_hx1yxffbc9mjydvph1g9pxbm/T/RackMultipart20170825-51652-ao7lev.xml>, @original_filename="test.xml", @content_type="text/xml", @headers="Content-Disposition: form-data; name=\"uploaded_file\"; filename=\"test.xml\"\r\nContent-Type: text/xml\r\n">, "commit"=>"Upload"}
+Redirected to http://localhost:3005/excel_file_generators/new
+Completed 302 Found in 112ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:40:12 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 19.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:44:36 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 28ms (Views: 27.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/excel_file_generators" for 127.0.0.1 at 2017-08-25 21:44:43 +0530
+Processing by ExcelFileGeneratorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+GuEL+AoSeiPz6GJFedNnt6h12Lxzgb/CCgS3aG+OM9yeizvE0CpJsXKus58JUisQhIDDIEBRFDS60L/Ddrpyw==", "uploaded_file"=>#<ActionDispatch::Http::UploadedFile:0x007fccfcea68b8 @tempfile=#<Tempfile:/var/folders/vt/dq_x0_hx1yxffbc9mjydvph1g9pxbm/T/RackMultipart20170825-51652-1nvyswa.xml>, @original_filename="test.xml", @content_type="text/xml", @headers="Content-Disposition: form-data; name=\"uploaded_file\"; filename=\"test.xml\"\r\nContent-Type: text/xml\r\n">, "commit"=>"Upload"}
+Redirected to http://localhost:3005/excel_file_generators/new
+Completed 302 Found in 91ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:44:43 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 25ms (Views: 24.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/excel_file_generators" for 127.0.0.1 at 2017-08-25 21:45:34 +0530
+Processing by ExcelFileGeneratorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wQL1v9hbc/AXS7LRVbxC0Pdh7Yi7pr36rgfIoR4iuDVLE11/KzOTPl1OqZY8fkfia9I55stp/1V0xJiDskZpMQ==", "uploaded_file"=>#<ActionDispatch::Http::UploadedFile:0x007fccfce64670 @tempfile=#<Tempfile:/var/folders/vt/dq_x0_hx1yxffbc9mjydvph1g9pxbm/T/RackMultipart20170825-51652-w27v8g.xml>, @original_filename="test.xml", @content_type="text/xml", @headers="Content-Disposition: form-data; name=\"uploaded_file\"; filename=\"test.xml\"\r\nContent-Type: text/xml\r\n">, "commit"=>"Upload"}
+Redirected to http://localhost:3005/excel_file_generators/new
+Completed 302 Found in 193ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:45:34 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/excel_file_generators" for 127.0.0.1 at 2017-08-25 21:46:40 +0530
+Processing by ExcelFileGeneratorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YgobEQ7hBKMYFcTM2KG54uwNkDt7KTyvwwj+yHjk0WnoG7PR/YnkbVIQ34uxY7zQcL5EVQvmfgAZy67q1IAAbQ==", "uploaded_file"=>#<ActionDispatch::Http::UploadedFile:0x007fccf5d7b238 @tempfile=#<Tempfile:/var/folders/vt/dq_x0_hx1yxffbc9mjydvph1g9pxbm/T/RackMultipart20170825-51652-i5om3l.xml>, @original_filename="test.xml", @content_type="text/xml", @headers="Content-Disposition: form-data; name=\"uploaded_file\"; filename=\"test.xml\"\r\nContent-Type: text/xml\r\n">, "commit"=>"Upload"}
+Redirected to http://localhost:3005/excel_file_generators/new
+Completed 302 Found in 81ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:46:40 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 116ms (Views: 115.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/excel_file_generators" for 127.0.0.1 at 2017-08-25 21:51:00 +0530
+Processing by ExcelFileGeneratorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QZTsM3w2C1uhLvM+Ht3GSRnuVQR8uIwb+vL/Ab78B0rLhUTzj17rlesr6Hl3H8N7hV2Bagx3zrQgMa8jEpjWTg==", "uploaded_file"=>#<ActionDispatch::Http::UploadedFile:0x007fccfcda95a0 @tempfile=#<Tempfile:/var/folders/vt/dq_x0_hx1yxffbc9mjydvph1g9pxbm/T/RackMultipart20170825-51652-ldjv66.xml>, @original_filename="test.xml", @content_type="text/xml", @headers="Content-Disposition: form-data; name=\"uploaded_file\"; filename=\"test.xml\"\r\nContent-Type: text/xml\r\n">, "commit"=>"Upload"}
+Redirected to http://localhost:3005/excel_file_generators/new
+Completed 302 Found in 113ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:51:00 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 185ms (Views: 184.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/excel_file_generators" for 127.0.0.1 at 2017-08-25 21:52:08 +0530
+Processing by ExcelFileGeneratorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hueuPIePdVj8sUAy7Ij4DEwJExFp2L4cB1uX3PjHmuwM9gb8dOeVlra0W3WFSv0+0LrHfxkX/LPdmMf+VKNL6A==", "uploaded_file"=>#<ActionDispatch::Http::UploadedFile:0x007fccfd345d38 @tempfile=#<Tempfile:/var/folders/vt/dq_x0_hx1yxffbc9mjydvph1g9pxbm/T/RackMultipart20170825-51652-1hyv687.xml>, @original_filename="test.xml", @content_type="text/xml", @headers="Content-Disposition: form-data; name=\"uploaded_file\"; filename=\"test.xml\"\r\nContent-Type: text/xml\r\n">, "commit"=>"Upload"}
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+
+TypeError (no implicit conversion of Fixnum into Hash):
+  app/controllers/excel_file_generators_controller.rb:25:in `block in create'
+  app/controllers/excel_file_generators_controller.rb:24:in `create'
+
+
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (74.3ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (65.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (189.0ms)
+
+
+Started POST "/excel_file_generators" for 127.0.0.1 at 2017-08-25 21:52:45 +0530
+Processing by ExcelFileGeneratorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hueuPIePdVj8sUAy7Ij4DEwJExFp2L4cB1uX3PjHmuwM9gb8dOeVlra0W3WFSv0+0LrHfxkX/LPdmMf+VKNL6A==", "uploaded_file"=>#<ActionDispatch::Http::UploadedFile:0x007fccfa2c23a0 @tempfile=#<Tempfile:/var/folders/vt/dq_x0_hx1yxffbc9mjydvph1g9pxbm/T/RackMultipart20170825-51652-1eyg405.xml>, @original_filename="test.xml", @content_type="text/xml", @headers="Content-Disposition: form-data; name=\"uploaded_file\"; filename=\"test.xml\"\r\nContent-Type: text/xml\r\n">, "commit"=>"Upload"}
+Redirected to http://localhost:3005/excel_file_generators/new
+Completed 302 Found in 92ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:52:45 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 294ms (Views: 294.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:53:32 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/excel_file_generators" for 127.0.0.1 at 2017-08-25 21:53:39 +0530
+Processing by ExcelFileGeneratorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uhlPV5SESF+gHD8B+sGXPgBvSZoD2lTuc8dZ3c2x5akwCOeXZ+yokeoZJEaTA5IMnNyd9HMVFkGpBAn/YdU0rQ==", "uploaded_file"=>#<ActionDispatch::Http::UploadedFile:0x007fccf8c41798 @tempfile=#<Tempfile:/var/folders/vt/dq_x0_hx1yxffbc9mjydvph1g9pxbm/T/RackMultipart20170825-51652-r29d4x.xml>, @original_filename="test.xml", @content_type="text/xml", @headers="Content-Disposition: form-data; name=\"uploaded_file\"; filename=\"test.xml\"\r\nContent-Type: text/xml\r\n">, "commit"=>"Upload"}
+Redirected to http://localhost:3005/excel_file_generators/new
+Completed 302 Found in 98ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:53:39 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/excel_file_generators" for 127.0.0.1 at 2017-08-25 21:56:48 +0530
+Processing by ExcelFileGeneratorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hnUrUOBbUkCsA0hbuBx8egooO8DaVs8++XBd8ehL0tEMZIOQEzOyjuYGUxzR3nlIlpvvrqqZjZEjsw3TRC8D1Q==", "uploaded_file"=>#<ActionDispatch::Http::UploadedFile:0x007fccfb152cd0 @tempfile=#<Tempfile:/var/folders/vt/dq_x0_hx1yxffbc9mjydvph1g9pxbm/T/RackMultipart20170825-51652-92f12n.xml>, @original_filename="test.xml", @content_type="text/xml", @headers="Content-Disposition: form-data; name=\"uploaded_file\"; filename=\"test.xml\"\r\nContent-Type: text/xml\r\n">, "commit"=>"Upload"}
+Redirected to http://localhost:3005/excel_file_generators/new
+Completed 302 Found in 99ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:56:49 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 152ms (Views: 151.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/excel_file_generators" for 127.0.0.1 at 2017-08-25 21:57:51 +0530
+Processing by ExcelFileGeneratorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O/Df4WGL2LMOYo7uB+/KnpJrQImjbOLilOWFHPzVPtqx4XchkuM4fURnlaluLc+sDtiU59OjoE1OJtU+ULHv3g==", "uploaded_file"=>#<ActionDispatch::Http::UploadedFile:0x007fccfcd336e8 @tempfile=#<Tempfile:/var/folders/vt/dq_x0_hx1yxffbc9mjydvph1g9pxbm/T/RackMultipart20170825-51652-kc2jwh.xml>, @original_filename="test.xml", @content_type="text/xml", @headers="Content-Disposition: form-data; name=\"uploaded_file\"; filename=\"test.xml\"\r\nContent-Type: text/xml\r\n">, "commit"=>"Upload"}
+Redirected to http://localhost:3005/excel_file_generators/new
+Completed 302 Found in 75ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:57:51 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 108ms (Views: 107.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/excel_file_generators" for 127.0.0.1 at 2017-08-25 21:59:17 +0530
+Processing by ExcelFileGeneratorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"f94Z7Qu6BLy0WS7sQkXzNDx+3BzM8mLXlu7TixR62nX1z7Et+NLkcv5cNasrh/YGoM0Icrw9IHhMLYOpuB4LcQ==", "uploaded_file"=>#<ActionDispatch::Http::UploadedFile:0x007fccf52e2088 @tempfile=#<Tempfile:/var/folders/vt/dq_x0_hx1yxffbc9mjydvph1g9pxbm/T/RackMultipart20170825-51652-1sa797h.xml>, @original_filename="test.xml", @content_type="text/xml", @headers="Content-Disposition: form-data; name=\"uploaded_file\"; filename=\"test.xml\"\r\nContent-Type: text/xml\r\n">, "commit"=>"Upload"}
+Redirected to http://localhost:3005/excel_file_generators/new
+Completed 302 Found in 135ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:59:17 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:59:42 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/excel_file_generators" for 127.0.0.1 at 2017-08-25 21:59:49 +0530
+Processing by ExcelFileGeneratorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PyAW3eQXUhQc+vuW5IVWMnLbbMLoAyw5c/daRoK+fJa1Mb4dF3+y2lb/4NGNR1MA7mi4rJjMbpapNApkLtqtkg==", "uploaded_file"=>#<ActionDispatch::Http::UploadedFile:0x007fccfd0288a8 @tempfile=#<Tempfile:/var/folders/vt/dq_x0_hx1yxffbc9mjydvph1g9pxbm/T/RackMultipart20170825-51652-19sqhsp.xml>, @original_filename="test.xml", @content_type="text/xml", @headers="Content-Disposition: form-data; name=\"uploaded_file\"; filename=\"test.xml\"\r\nContent-Type: text/xml\r\n">, "commit"=>"Upload"}
+Redirected to http://localhost:3005/excel_file_generators/new
+Completed 302 Found in 77ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 21:59:49 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 19.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/excel_file_generators" for 127.0.0.1 at 2017-08-25 22:07:28 +0530
+Processing by ExcelFileGeneratorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t4rezmTYRnWRJOZYQZpt0SAK2l4p/C83ZOC7ue5ZnSw9m3YOl7Cmu9sh/R8oWGjjvLkOMFkzbZi+I+ubQj1MKA==", "uploaded_file"=>#<ActionDispatch::Http::UploadedFile:0x007f9eaf02bb60 @tempfile=#<Tempfile:/var/folders/vt/dq_x0_hx1yxffbc9mjydvph1g9pxbm/T/RackMultipart20170825-52601-1cx69o6.xml>, @original_filename="test.xml", @content_type="text/xml", @headers="Content-Disposition: form-data; name=\"uploaded_file\"; filename=\"test.xml\"\r\nContent-Type: text/xml\r\n">, "commit"=>"Upload"}
+Redirected to http://localhost:3005/excel_file_generators/new
+Completed 302 Found in 111ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 22:07:29 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 871ms (Views: 870.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/excel_file_generators" for 127.0.0.1 at 2017-08-25 22:08:56 +0530
+Processing by ExcelFileGeneratorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GlZHmWk4/fDr+/lvgDgOSGPyYViU+KxIM5lhvZtNrkuQR+9ZmlAdPqH+4ijp+gt6/0G1NuQ37ufpWjGfNyl/Tw==", "uploaded_file"=>#<ActionDispatch::Http::UploadedFile:0x007f9eac80c788 @tempfile=#<Tempfile:/var/folders/vt/dq_x0_hx1yxffbc9mjydvph1g9pxbm/T/RackMultipart20170825-52601-icre7p.xml>, @original_filename="test.xml", @content_type="text/xml", @headers="Content-Disposition: form-data; name=\"uploaded_file\"; filename=\"test.xml\"\r\nContent-Type: text/xml\r\n">, "commit"=>"Upload"}
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `row' for nil:NilClass):
+  app/controllers/excel_file_generators_controller.rb:26:in `block in create'
+  app/controllers/excel_file_generators_controller.rb:24:in `create'
+
+
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.7ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (119.0ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (196.7ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 22:11:19 +0530
+
+ActionController::RoutingError (undefined local variable or method `re' for ExcelFileGeneratorsController:Class):
+  app/controllers/excel_file_generators_controller.rb:2:in `<class:ExcelFileGeneratorsController>'
+  app/controllers/excel_file_generators_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/routes/_table.html.erb (27.6ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (118.7ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (65.8ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (143.9ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 22:11:33 +0530
+
+ActionController::RoutingError (undefined local variable or method `re' for ExcelFileGeneratorsController:Class):
+  app/controllers/excel_file_generators_controller.rb:2:in `<class:ExcelFileGeneratorsController>'
+  app/controllers/excel_file_generators_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (87.1ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (60.0ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (127.9ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 22:11:48 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/excel_file_generators" for 127.0.0.1 at 2017-08-25 22:11:55 +0530
+Processing by ExcelFileGeneratorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"71Je0KKGZSeCoQTJ1mL45JR08L8tAY1/w1IhaKC9LURlQ/YQUe6F6cikH46/oP3WCMck0V3Oz9AZkXFKDNn8QA==", "uploaded_file"=>#<ActionDispatch::Http::UploadedFile:0x007f9eac2d9630 @tempfile=#<Tempfile:/var/folders/vt/dq_x0_hx1yxffbc9mjydvph1g9pxbm/T/RackMultipart20170825-52601-cmsc5c.xml>, @original_filename="test.xml", @content_type="text/xml", @headers="Content-Disposition: form-data; name=\"uploaded_file\"; filename=\"test.xml\"\r\nContent-Type: text/xml\r\n">, "commit"=>"Upload"}
+Redirected to http://localhost:3005/excel_file_generators/new
+Completed 302 Found in 96ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 22:11:55 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 22:12:22 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/excel_file_generators" for 127.0.0.1 at 2017-08-25 22:12:55 +0530
+Processing by ExcelFileGeneratorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H4ijuQ2jFEIM9Qaj0WOC0lyzDnh95RrRd9d1qBARUtyVmQt5/sv0jEbwHeS4oYfgwADaFg0qWH6tFCWKvHWD2A==", "uploaded_file"=>#<ActionDispatch::Http::UploadedFile:0x007f9eaf7bb6a0 @tempfile=#<Tempfile:/var/folders/vt/dq_x0_hx1yxffbc9mjydvph1g9pxbm/T/RackMultipart20170825-52601-dvemo5.xml>, @original_filename="test.xml", @content_type="text/xml", @headers="Content-Disposition: form-data; name=\"uploaded_file\"; filename=\"test.xml\"\r\nContent-Type: text/xml\r\n">, "commit"=>"Upload"}
+Redirected to http://localhost:3005/excel_file_generators/new
+Completed 302 Found in 10334ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 22:13:05 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 32ms (Views: 31.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/excel_file_generators" for 127.0.0.1 at 2017-08-25 22:15:54 +0530
+
+SyntaxError (/Users/amrendra.singh/Documents/itech/xml_to_excel/app/controllers/excel_file_generators_controller.rb:33: syntax error, unexpected ',', expecting =>
+    	sheet.add_style 'A1:D10', b: true, centered, sz: 14
+    	                                            ^):
+  app/controllers/excel_file_generators_controller.rb:33: syntax error, unexpected ',', expecting =>
+
+
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (67.7ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (60.6ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (132.4ms)
+
+
+Started POST "/excel_file_generators" for 127.0.0.1 at 2017-08-25 22:16:51 +0530
+Processing by ExcelFileGeneratorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zFRuVWaUTfM0ktY6eP+yvC0u+wI21wjvd286GLbTTu9GRcaVlfytPX6XzX0RPbeOsZ0vbEYYSkCtrGo6Gref6w==", "uploaded_file"=>#<ActionDispatch::Http::UploadedFile:0x007f9eb2871ce0 @tempfile=#<Tempfile:/var/folders/vt/dq_x0_hx1yxffbc9mjydvph1g9pxbm/T/RackMultipart20170825-52601-1eam85x.xml>, @original_filename="test.xml", @content_type="text/xml", @headers="Content-Disposition: form-data; name=\"uploaded_file\"; filename=\"test.xml\"\r\nContent-Type: text/xml\r\n">, "commit"=>"Upload"}
+Redirected to http://localhost:3005/excel_file_generators/new
+Completed 302 Found in 84ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 22:16:51 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/excel_file_generators" for 127.0.0.1 at 2017-08-25 22:19:35 +0530
+
+SyntaxError (/Users/amrendra.singh/Documents/itech/xml_to_excel/app/controllers/excel_file_generators_controller.rb:31: syntax error, unexpected ',', expecting =>
+    	sheet.add_style 'A1:E1', bg_color: 'FFF135', bold , centered
+    	                                                   ^):
+  app/controllers/excel_file_generators_controller.rb:31: syntax error, unexpected ',', expecting =>
+
+
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.7ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (61.9ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (138.4ms)
+
+
+Started POST "/excel_file_generators" for 127.0.0.1 at 2017-08-25 22:20:01 +0530
+
+SyntaxError (/Users/amrendra.singh/Documents/itech/xml_to_excel/app/controllers/excel_file_generators_controller.rb:31: syntax error, unexpected ',', expecting =>
+    	sheet.add_style 'A1:E1', bg_color: 'FFF135', bold , centered
+    	                                                   ^):
+  app/controllers/excel_file_generators_controller.rb:31: syntax error, unexpected ',', expecting =>
+
+
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (73.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (66.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (136.1ms)
+
+
+Started POST "/excel_file_generators" for 127.0.0.1 at 2017-08-25 22:20:19 +0530
+
+SyntaxError (/Users/amrendra.singh/Documents/itech/xml_to_excel/app/controllers/excel_file_generators_controller.rb:31: syntax error, unexpected '\n', expecting =>):
+  app/controllers/excel_file_generators_controller.rb:31: syntax error, unexpected '\n', expecting =>
+
+
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.2ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.0ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (58.7ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/amrendra.singh/.rvm/gems/ruby-2.3.1@xml_to_sheet/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (130.4ms)
+
+
+Started POST "/excel_file_generators" for 127.0.0.1 at 2017-08-25 22:20:37 +0530
+Processing by ExcelFileGeneratorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hTdZPDk1Dfi8XFCedRhbtRtwwH00cMVDnmuo1qBRZQYPJvH8yl3tNvZZS9kc2l6Hh8MUE0S/h+xEqPj0DDW0Ag==", "uploaded_file"=>#<ActionDispatch::Http::UploadedFile:0x007f9eb23a7070 @tempfile=#<Tempfile:/var/folders/vt/dq_x0_hx1yxffbc9mjydvph1g9pxbm/T/RackMultipart20170825-52601-1tdri5z.xml>, @original_filename="test.xml", @content_type="text/xml", @headers="Content-Disposition: form-data; name=\"uploaded_file\"; filename=\"test.xml\"\r\nContent-Type: text/xml\r\n">, "commit"=>"Upload"}
+Redirected to http://localhost:3005/excel_file_generators/new
+Completed 302 Found in 108ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 22:20:37 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 22:21:54 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/excel_file_generators" for 127.0.0.1 at 2017-08-25 22:22:01 +0530
+Processing by ExcelFileGeneratorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KzSculSpI1R/QPlyY3b6BXKUtZBj3YKf9ByXI1r0R0+hJTR6p8HDmjVF4jUKtP837idh/hMSwDAu38cB9pCWSw==", "uploaded_file"=>#<ActionDispatch::Http::UploadedFile:0x007f9eacc70248 @tempfile=#<Tempfile:/var/folders/vt/dq_x0_hx1yxffbc9mjydvph1g9pxbm/T/RackMultipart20170825-52601-siczr0.xml>, @original_filename="test.xml", @content_type="text/xml", @headers="Content-Disposition: form-data; name=\"uploaded_file\"; filename=\"test.xml\"\r\nContent-Type: text/xml\r\n">, "commit"=>"Upload"}
+Redirected to http://localhost:3005/excel_file_generators/new
+Completed 302 Found in 94ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/excel_file_generators/new" for 127.0.0.1 at 2017-08-25 22:22:01 +0530
+Processing by ExcelFileGeneratorsController#new as HTML
+  Rendered excel_file_generators/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.0ms)
